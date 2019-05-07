@@ -14,4 +14,4 @@ script:
 #- npm install selenium-server
 #- ./node_modules/.bin/selenium-standalone install
 #- npm run start
-- BROWSER=ie_11_win_10 npx codeceptjs run
+- BROWSER=ie_11_win_10 ./node_modules/.bin/codeceptjs run
