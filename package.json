@@ -1,0 +1,19 @@
+{
+  "name": "aklamio-e2e-tests",
+  "version": "1.0.0",
+  "description": "This project demotrates e2e tests using codeceptjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "thanh.nguyen",
+  "license": "ISC",
+  "dependencies": {
+    "@wdio/selenium-standalone-service": "5.8.0",
+    "codeceptjs": "2.1.1",
+    "webdriverio": "^5.8.2"
+  },
+  "devDependencies": {
+    "codeceptjs-bshelper": "^1.0.3"
+  }
+}
