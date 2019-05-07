@@ -1,13 +1,10 @@
-
-const { I, integrationPage, data } = inject();
-
 Feature('Login');
 
-Before(() => {
+Before((I) => {
     I.amOnPage(`/integration/${process.env.PORTAL_ID}`);
 })
 
-Scenario('Login with invalid credentials', () => {
+Scenario('Login with invalid credentials', (integrationPage, data) => {
     const { email, password } = data.credentials.invalid 
     integrationPage.login({ email, password });
     integrationPage.seeError();
