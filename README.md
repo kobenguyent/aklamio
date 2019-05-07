@@ -33,13 +33,13 @@ For all possible combinations of browsers and Oses, please refer to `codecept.co
 - To run the tests with Chrome 74 on Windows 10
 
 ```sh
-BROWSER=chrome_74_win_10 npx codeceptjs run-multiple parallel
+BROWSER=chrome_74_win_10 npx codeceptjs run
 ```
 
 - To run the tests with FF 66 on Windows 10
 
 ```sh
-BROWSER=firefox_66_win_10 npx codeceptjs run-multiple parallel
+BROWSER=firefox_66_win_10 npx codeceptjs run
 ```
 
 - To run the tests with Safari 12 on MacOS Mojave

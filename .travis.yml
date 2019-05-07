@@ -1,9 +1,16 @@
 language: node_js
 node_js:
 - 8
+- 10
 sudo: required
 services:
 - docker
+env:
+  matrix:
+  - BROWSER=ie_11_win_10
+  - BROWSER=chrome_74_win_10
+  - BROWSER=firefox_66_win_10
+  - BROWSER=safari_12_mojave
 before_install:
 - docker pull selenium/standalone-chrome:latest
 before_script:
@@ -11,7 +18,4 @@ before_script:
 - export DBUS_SESSION_BUS_ADDRESS=/dev/null
 script:
 - npm install
-#- npm install selenium-server
-#- ./node_modules/.bin/selenium-standalone install
-#- npm run start
-- BROWSER=ie_11_win_10 npx codeceptjs run --verbose
+- 'BROWSER=${BROWSER} npx codeceptjs run'
