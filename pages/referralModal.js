@@ -1,6 +1,6 @@
 const I = actor();
 
-export default referralModalBox = {
+module.exports = {
 
   giveawayBtn: 'button[data-aklamio-recommend-rr-follower]',
   emailField: 'form[data-form="find_or_register"] input[data-field="email"]',
@@ -10,6 +10,7 @@ export default referralModalBox = {
   errorMsg: 'div[class="notification error"]',
 
   referProduct(emailAddress, type = 'giveaway') {
+
     within({ frame: `${process.env.IFRAME_ID}` }, () => {
       switch (type) {
         case 'giveaway':

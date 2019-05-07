@@ -94,8 +94,8 @@ exports.config = {
   },
   include: {
     I: './steps_file',
-    integrationPage: './pages/integrationPage',
-    referralModalBox: './pages/referralModalBox',
+    integrationPage: './pages/integration',
+    referralModalBox: './pages/referralModal',
     data: './data_test',
   },
   mocha: {},

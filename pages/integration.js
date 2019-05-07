@@ -1,6 +1,6 @@
 const I = actor();
 
-export default integrationPage = {
+module.exports = {
 
   referNowBtn: 'div[data-form="register"] button',
   loginLnk: 'a[href="#"]',
