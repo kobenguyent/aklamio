@@ -1,0 +1,7 @@
+image: node:8.16
+stages:
+  - e2e-test
+e2e-test:
+  script:
+    - npm i
+    - BROWSER=ie_11_win_10 npx codeceptjs run
