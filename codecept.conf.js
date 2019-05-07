@@ -91,6 +91,7 @@ exports.config = {
     REST: {},
   },
   include: {
+    I: './steps_file.js',
     integrationPage: './pages/integrationPage.js',
     referralModalBox: './pages/referralModalBox.js',
     data: './data_test.js',
