@@ -6,8 +6,8 @@ stages:
 
 install_dependencies:
   stage: build
-    script:
-      - npm install
+  script:
+    - npm install
 
 run e2e test:
   stage: test
