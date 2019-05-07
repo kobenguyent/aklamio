@@ -1,21 +1,24 @@
 language: node_js
 node_js:
 - 8
-- 10
 sudo: required
 services:
-- docker
+  - docker
 env:
+  global:
+    - BROWSERSTACK_USERNAME=thanh146
+    - BROWSERSTACK_ACCESS_KEY=sL4HGmz9nqSxoFByqw2i
+    - PORTAL_ID=08e484b388fc62bf981823edfa772b16
   matrix:
-  - BROWSER=ie_11_win_10
-  - BROWSER=chrome_74_win_10
-  - BROWSER=firefox_66_win_10
-  - BROWSER=safari_12_mojave
+    - BROWSER=ie_11_win_10
+    - BROWSER=chrome_74_win_10
+    - BROWSER=firefox_66_win_10
+    - BROWSER=safari_12_mojave
 before_install:
-- docker pull selenium/standalone-chrome:latest
+  - docker pull selenium/standalone-chrome:latest
 before_script:
-- docker run -d --net=host --shm-size=2g selenium/standalone-chrome:latest
-- export DBUS_SESSION_BUS_ADDRESS=/dev/null
+  - docker run -d --net=host --shm-size=2g selenium/standalone-chrome:latest
+  - export DBUS_SESSION_BUS_ADDRESS=/dev/null
 script:
-- npm install
-- 'BROWSER=${BROWSER} npx codeceptjs run'
+  - npm install
+  - 'BROWSER=${BROWSER} npx codeceptjs run'

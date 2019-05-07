@@ -28,7 +28,7 @@ $ npm install
 
 ### How to trigger UI tests
 
-For all possible combinations of browsers and Oses, please refer to `codecept.conf.js`
+For all possible combinations of browsers and OSes, please refer to `codecept.conf.js`
 
 - To run the tests with Chrome 74 on Windows 10
 
@@ -54,6 +54,9 @@ BROWSER=safari_12_mojave npx codeceptjs run
 BROWSER=ie_11_win_10 npx codeceptjs run
 ```
 
+### Travis CI
+
+This project is also configured to be triggered in Travis CI/ Gitlab CI whenever we push a new commit. Tests will be run against 4 browsers: IE11, Safari, Firefox and Chrome.
 
 
 

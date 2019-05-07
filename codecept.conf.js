@@ -1,16 +1,15 @@
 require('import-export');
 
-process.env.PORTAL_ID = '08e484b388fc62bf981823edfa772b16';
 process.env.IFRAME_ID = `[src="https://sonata.aklamio.com/portals/${process.env.PORTAL_ID}/index.html#route=index"]`;
 
-const _user = process.env.BROWSERSTACK_USERNAME || 'thanhnguyen55';
-const _key = process.env.BROWSERSTACK_ACCESS_KEY|| 'FaqbAczpFK92JExrfzJD';
+const _user = process.env.BROWSERSTACK_USERNAME;
+const _key = process.env.BROWSERSTACK_ACCESS_KEY;
 
 const commonBrowserstackCapabilities = {
   'browserstack.debug': 'true',
   resolution: '1920x1080',
-  project: 'UCB',
-  build: 'UCB Master',
+  project: 'Aklamio',
+  build: 'Aklamio Master',
   'browserstack.timezone': 'CEST'
 };
 
