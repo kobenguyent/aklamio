@@ -1,6 +1,6 @@
 const I = actor();
 
-module.exports = {
+export default referralModalBox = {
 
   giveawayBtn: 'button[data-aklamio-recommend-rr-follower]',
   emailField: 'form[data-form="find_or_register"] input[data-field="email"]',

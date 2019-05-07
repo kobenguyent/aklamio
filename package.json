@@ -14,6 +14,7 @@
     "webdriverio": "^5.8.2"
   },
   "devDependencies": {
-    "codeceptjs-bshelper": "^1.0.3"
+    "codeceptjs-bshelper": "^1.0.3",
+    "import-export": "^1.0.1"
   }
 }
