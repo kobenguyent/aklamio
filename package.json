@@ -10,7 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@wdio/selenium-standalone-service": "5.8.0",
-    "codeceptjs": "2.1.1",
+    "codeceptjs": "2.0.8",
     "webdriverio": "^5.8.2"
   },
   "devDependencies": {
