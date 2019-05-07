@@ -10,7 +10,6 @@ export default referralModalBox = {
   errorMsg: 'div[class="notification error"]',
 
   referProduct(emailAddress, type = 'giveaway') {
-
     within({ frame: `${process.env.IFRAME_ID}` }, () => {
       switch (type) {
         case 'giveaway':

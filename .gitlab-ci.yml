@@ -1,14 +1,10 @@
 image: node:latest
 
 stages:
-  - build
   - test
-
-install_dependencies:
-  stage: build
-  script:
-    - npm install
 
 run e2e test:
   stage: test
-  script: BROWSER=ie_11_win_10 npx codeceptjs run
+  script: 
+    - npm install
+    - BROWSER=ie_11_win_10 npx codeceptjs run
