@@ -9,8 +9,8 @@
   "author": "thanh.nguyen",
   "license": "ISC",
   "dependencies": {
-    "@wdio/selenium-standalone-service": "5.8.0",
-    "codeceptjs": "2.1.1",
+    "@wdio/selenium-standalone-service": "5.16.5",
+    "codeceptjs": "2.3.6",
     "webdriverio": "^5.8.2"
   },
   "devDependencies": {
