@@ -1,5 +1,7 @@
 # Introduction
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/PeterNgTr/aklamio.svg)](https://greenkeeper.io/)
+
 This project demonstrates the E2E tests
 
 # How to use
